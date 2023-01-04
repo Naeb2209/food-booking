@@ -1,0 +1,126 @@
+:root {
+    --purple-color: #ADA2FF;
+    --blue-color: #C0DEFF;
+    --peach-color: #FFE5F1;
+    --yellow-color: #FFF8E1;
+}
+
+
+
+* {
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+.app {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--purple-color);
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   =======CONTAINER ======== 
+   =========================
+*/
+
+.containers {
+    height: 90%;
+    width: 80%;
+}
+
+/* === CONTAINER HEADER === */
+
+.container__header {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+
+}
+/* CONTAINER HEADER INFO */
+
+.container__header__info {
+   height: 100%;
+   width: 500px;
+   display: flex;
+}
+
+
+
+.container__header__number-item, .container__header__price {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--peach-color);    
+    background-color: var(--yellow-color);
+    height: 100%;
+    width: 200px;
+}
+
+.container__header__number-item {
+    
+    margin-right: 12px;
+}
+
+.container__header__number-item__text {
+    font-size: 1.6rem;
+    color: var(--purple-color);
+}
+
+
+.container__header__price {
+
+}
+
+
+/* CONTAINER HEADER ACTION */
+
+.container__header__action {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.container__header__action__btn-submit {
+    height: 100%;
+    width: 200px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--purple-color);
+    background-color: var(--yellow-color);
+    border: 4px solid var(--peach-color);    
+    border-radius: 50px;    
+}
+
+/* === CONTAINER BODY ===*/
+.container__body {
+    margin-top: 16px;
+    height: 800px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 28px;
+    flex-wrap: wrap;
+    line-height: 200px;
+}
+
+.container__body__item {
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    border: 4px solid var(--peach-color);    
+    margin-right: 16px;
+
+}
